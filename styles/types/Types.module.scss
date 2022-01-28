@@ -1,0 +1,1210 @@
+@import "../../styles/global/mixins/mixins.scss";
+@import "../../styles/global/fonts/fonts.scss";
+
+//! Non Responsive
+#typesBody {
+  //? Top
+  .types_top {
+    height: 400px;
+    position: relative;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+
+    .types_top_bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include bGSU;
+    }
+
+    .types_top_cnt {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      @include tLC;
+      text-align: center;
+      font-family: $P;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+
+      div {
+        h2 {
+          font-size: clamp(4rem, 5vw, 5rem);
+          font-weight: $PEB;
+          transition: 0.3s ease-in-out;
+        }
+
+        p {
+          font-size: 21px;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  //? Types Box
+  .types_box {
+    max-width: 1700px;
+    @include qC;
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+    overflow: hidden;
+
+    .types_box_type {
+      width: 100%;
+      margin-top: 40px !important;
+      margin-bottom: 40px !important;
+
+      .types_box_type_cnt {
+        width: 100%;
+
+        .types_box_type_cnt_row {
+          .types_box_type_cnt_side {
+            height: 550px;
+            position: relative;
+            @include tLC;
+
+            .types_box_type_cnt_side_bg {
+              position: absolute;
+              top: 0;
+              left: 0;
+              @include bGSU;
+            }
+
+            .types_box_type_cnt_side_text {
+              font-family: $P;
+              max-width: 75%;
+              width: 100%;
+              @include qC;
+              margin-right: 0 !important;
+
+              h2 {
+                font-size: 50px;
+                font-weight: $PEB;
+              }
+
+              p {
+                font-size: 21px;
+                max-width: 85%;
+              }
+
+              a {
+                display: inline-block;
+                text-decoration: none;
+                font-weight: $PM;
+                border: 2px solid #f3a032;
+                padding: 10px !important;
+                font-size: 18px;
+                color: black;
+
+                &:hover {
+                  color: white;
+                  background-color: #f3a032;
+                }
+              }
+
+              h4 {
+                padding-top: 50px !important;
+                font-weight: $PB;
+                font-size: 30px;
+              }
+
+              ul {
+                list-style: circle;
+                margin: 0 !important;
+                padding: 0 !important;
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+
+                li {
+                  font-size: 21px;
+                  margin: 10px !important;
+                  margin-left: 0 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Adjusting this pages top bg
+#mesechinusBody {
+  .type_top {
+    .type_top_bg {
+      background-position: 50% 60% !important;
+    }
+  }
+}
+
+#atelerixBody,
+#erinaceusBody,
+#hemiechinusBody,
+#mesechinusBody,
+#paraechinusBody {
+  //? Top
+  .type_top {
+    height: 400px;
+    position: relative;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+
+    .type_top_bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include bGSU;
+    }
+
+    .type_top_cnt {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      @include tLC;
+      text-align: center;
+      font-family: $P;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+
+      div {
+        h2 {
+          font-size: clamp(4rem, 5vw, 5rem);
+          font-weight: $PEB;
+          transition: 0.3s ease-in-out;
+        }
+
+        p {
+          font-size: 21px;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  //? Species
+  .type_species {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    overflow: hidden;
+
+    .type_togglers_box {
+      max-width: 1300px;
+      @include qC;
+      .type_togglers_row {
+        .type_toggler {
+          height: 400px;
+          position: relative;
+          border: 2px solid white;
+          transition: 0.5s ease-in-out;
+
+          .modal_toggler_bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include bGSU;
+
+            .modal_toggler {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              z-index: 100;
+              background-color: rgba(0, 0, 0, 0.5);
+              display: grid;
+              cursor: pointer;
+              transition: 0.3s ease-in-out;
+
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.6);
+              }
+
+              .modal_toggler_desc {
+                padding: 10px !important;
+                font-family: $P;
+                color: white;
+                font-size: 21px;
+              }
+
+              .modal_toggler_name {
+                display: flex;
+                align-items: flex-end;
+                padding: 10px !important;
+                h2 {
+                  color: white;
+                  font-family: $P;
+                  font-weight: $PEB;
+                  font-size: clamp(2rem, 3vw, 3rem);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //? Modals
+  .modal_darken {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 800;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+  }
+
+  .modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    max-width: 30%;
+    max-height: 40%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 810;
+    @include bGSU;
+    background-color: white;
+  }
+}
+
+//! Responsive
+@media all and (max-width: 1995px) {
+  #typesBody {
+    //? Types Box
+    .types_box {
+      max-width: 80%;
+      .types_box_type {
+        .types_box_type_cnt {
+          .types_box_type_cnt_row {
+            .types_box_type_cnt_side {
+              .types_box_type_cnt_side_text {
+                max-width: 79%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #atelerixBody,
+  #erinaceusBody,
+  #hemiechinusBody,
+  #mesechinusBody,
+  #paraechinusBody {
+    .type_species {
+      max-width: 95%;
+      @include qC;
+      padding-top: 95px !important;
+      padding-bottom: 95px !important;
+    }
+
+    //? Modals
+    .modal {
+      max-width: 40%;
+      max-height: 40%;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  #typesBody {
+    //? Top
+    .types_top {
+      height: 300px;
+
+      .types_top_cnt {
+        div {
+          h2 {
+            font-size: 51px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    //? Types Box
+    .types_box {
+      padding-top: 50px !important;
+      padding-bottom: 50px !important;
+      max-width: 95%;
+      .types_box_type {
+        .types_box_type_cnt {
+          .types_box_type_cnt_row {
+            #t1L,
+            #t2L,
+            #t3L,
+            #t4L,
+            #t5L {
+              max-width: 45%;
+            }
+            #t1R,
+            #t2R,
+            #t3R,
+            #t4R,
+            #t5R {
+              max-width: 55%;
+            }
+
+            .types_box_type_cnt_side {
+              width: 100%;
+              .types_box_type_cnt_side_text {
+                max-width: 80%;
+
+                h2 {
+                  font-size: 40px;
+                }
+
+                p {
+                  font-size: 18px;
+                }
+
+                a {
+                  font-size: 17px;
+                }
+
+                h4 {
+                  font-size: 25px;
+                }
+
+                ul {
+                  li {
+                    font-size: 17px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #atelerixBody,
+  #erinaceusBody,
+  #hemiechinusBody,
+  #mesechinusBody,
+  #paraechinusBody {
+    //? Type Tops
+    .type_top {
+      height: 300px;
+
+      .type_top_cnt {
+        div {
+          h2 {
+            font-size: 51px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .type_species {
+      .type_togglers_box {
+        .type_togglers_row {
+          .type_toggler {
+            max-width: 50%;
+            width: 100%;
+            height: 290px !important;
+
+            .modal_toggler {
+              background-color: rgba(0, 0, 0, 0.8) !important;
+
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+              }
+
+              .modal_toggler_desc {
+                padding: 0px !important;
+                p {
+                  font-size: 16px !important;
+                  padding-left: 0px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //? Modals
+    .modal {
+      max-width: 95%;
+      max-height: 35%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media all and (max-width: 768px) {
+  #typesBody {
+    //? Top
+    .types_top {
+      height: 280px;
+
+      .types_top_cnt {
+        div {
+          h2 {
+            font-size: 41px;
+          }
+          p {
+            font-size: 16px;
+            max-width: 90%;
+            @include qC;
+          }
+        }
+      }
+    }
+
+    //? Types Box
+    .types_box {
+      padding-top: 0px !important;
+      padding-bottom: 20px !important;
+      max-width: 95%;
+      .types_box_type {
+        margin-top: 10px !important;
+
+        &:last-child {
+          margin-bottom: 10px !important;
+        }
+
+        .types_box_type_cnt {
+          .types_box_type_cnt_row {
+            #t1R,
+            #t2R,
+            #t3R,
+            #t4R,
+            #t5R {
+              height: 100% !important;
+              padding-top: 30px !important;
+              padding-bottom: 0px !important;
+            }
+
+            .types_box_type_cnt_side {
+              width: 100%;
+              max-width: 100% !important;
+              height: 220px;
+
+              .types_box_type_cnt_side_text {
+                max-width: 90%;
+                @include qC;
+                h2 {
+                  font-size: 40px;
+                }
+
+                p {
+                  font-size: 16px;
+                  max-width: 100%;
+                }
+
+                a {
+                  font-size: 15px;
+                }
+
+                h4 {
+                  font-size: 25px;
+                }
+
+                ul {
+                  li {
+                    margin: 5px !important;
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //? Type Tops
+  #atelerixBody,
+  #erinaceusBody,
+  #hemiechinusBody,
+  #mesechinusBody,
+  #paraechinusBody {
+    .type_top {
+      height: 280px;
+
+      .type_top_cnt {
+        div {
+          h2 {
+            font-size: 41px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .type_species {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+      .type_togglers_box {
+        .type_togglers_row {
+          .type_toggler {
+            max-width: 100%;
+            width: 100%;
+            height: 230px;
+
+            .modal_toggler_bg {
+              .modal_toggler {
+                background-color: rgba(0, 0, 0, 0.8);
+
+                &:hover {
+                  background-color: rgba(0, 0, 0, 0.8);
+                }
+
+                div {
+                  h2 {
+                    font-size: 27px !important;
+                    margin-bottom: 0 !important;
+                  }
+                }
+
+                .modal_toggler_desc {
+                  p {
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*! Pixel 2 XL */
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #typesBody {
+    //? Types Box
+    .types_box {
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+      max-width: 95%;
+      .types_box_type {
+        .types_box_type_cnt {
+          .types_box_type_cnt_row {
+            #t1L,
+            #t2L,
+            #t3L,
+            #t4L,
+            #t5L {
+              max-width: 30% !important;
+              height: 400px;
+            }
+
+            #t1L,
+            #t2L {
+              .types_box_type_cnt_side_bg {
+                background-position: 70% 50%;
+              }
+            }
+
+            #t3L {
+              .types_box_type_cnt_side_bg {
+                background-position: 30% 50%;
+              }
+            }
+
+            #t5L {
+              .types_box_type_cnt_side_bg {
+                background-position: 90% 50%;
+              }
+            }
+
+            #t1R,
+            #t2R {
+              padding-top: 15px !important;
+            }
+
+            #t4R,
+            #t5R {
+              padding-top: 25px !important;
+            }
+            #t3R {
+              padding-top: 40px !important;
+            }
+
+            #t1R,
+            #t2R,
+            #t3R,
+            #t4R,
+            #t5R {
+              max-width: 70% !important;
+              height: 350px;
+              padding-left: 30px !important;
+              padding-bottom: 10px !important;
+            }
+
+            .types_box_type_cnt_side {
+              width: 100%;
+              height: 100%;
+
+              .types_box_type_cnt_side_text {
+                max-width: 95%;
+                padding-top: 20px !important;
+                padding-bottom: 0 !important;
+
+                h2 {
+                  font-size: 40px;
+                }
+
+                p {
+                  font-size: 15px;
+                  max-width: 100%;
+                }
+
+                a {
+                  font-size: 15px;
+                }
+
+                h4 {
+                  font-size: 25px;
+                }
+
+                ul {
+                  display: grid;
+                  grid-template-columns: repeat(2, auto);
+                  list-style: none;
+                  li {
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #atelerixBody,
+  #erinaceusBody,
+  #hemiechinusBody,
+  #mesechinusBody,
+  #paraechinusBody {
+    .type_species {
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+      .type_togglers_box {
+        max-width: 100%;
+        .type_togglers_row {
+          .type_toggler {
+            max-width: 50%;
+            width: 100%;
+            height: 250px;
+
+            .modal_toggler_bg {
+              .modal_toggler {
+                background-color: rgba(0, 0, 0, 0.6);
+
+                div {
+                  padding: 5px !important;
+                  padding-left: 10px !important;
+                  h2 {
+                    font-size: 24px !important;
+                    margin-bottom: 0 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .modal {
+      max-height: 90%;
+      max-width: 70%;
+    }
+  }
+}
+
+/*! Ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  #typesBody {
+    //? Types Box
+    .types_box {
+      padding-top: 60px !important;
+      padding-bottom: 70px !important;
+      max-width: 75%;
+      .types_box_type {
+        .types_box_type_cnt {
+          .types_box_type_cnt_row {
+            #t1R,
+            #t2R,
+            #t3R,
+            #t4R,
+            #t5R {
+              height: 400px;
+              padding-top: 40px !important;
+              padding-bottom: 40px !important;
+            }
+
+            .types_box_type_cnt_side {
+              width: 100%;
+              max-width: 100% !important;
+              height: 220px;
+
+              .types_box_type_cnt_side_text {
+                max-width: 95%;
+
+                h2 {
+                  font-size: 50px;
+                }
+
+                p {
+                  font-size: 18px;
+                }
+
+                a {
+                  font-size: 15px;
+                }
+
+                h4 {
+                  font-size: 35px;
+                }
+
+                ul {
+                  li {
+                    margin: 5px !important;
+                    font-size: 17px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #atelerixBody,
+  #erinaceusBody,
+  #hemiechinusBody,
+  #mesechinusBody,
+  #paraechinusBody {
+    .type_species {
+      .type_togglers_box {
+        .type_togglers_row {
+          .type_toggler {
+            max-width: 50% !important;
+
+            .modal_toggler_bg {
+              .modal_toggler {
+                background-color: rgba(0, 0, 0, 0.6);
+
+                div {
+                  padding: 5px !important;
+                  padding-left: 10px !important;
+                  h2 {
+                    font-size: 28px !important;
+                    margin-bottom: 0 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .modal {
+      max-height: 45%;
+      max-width: 75%;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #typesBody {
+    //? Types Box
+    .types_box {
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+      max-width: 95%;
+      .types_box_type {
+        margin-top: 10px !important;
+
+        &:last-child {
+          margin-bottom: 10px !important;
+        }
+        .types_box_type_cnt {
+          .types_box_type_cnt_row {
+            #t1L,
+            #t2L,
+            #t3L,
+            #t4L,
+            #t5L {
+              max-width: 40% !important;
+              height: 500px;
+
+              .types_box_type_cnt_side_bg {
+                background-position: 70% 50%;
+              }
+            }
+
+            #t1L,
+            #t2L {
+              .types_box_type_cnt_side_bg {
+                background-position: 70% 50%;
+              }
+            }
+
+            #t3L {
+              .types_box_type_cnt_side_bg {
+                background-position: 30% 50%;
+              }
+            }
+
+            #t5L {
+              .types_box_type_cnt_side_bg {
+                background-position: 90% 50%;
+              }
+            }
+
+            #t1R,
+            #t2R {
+              padding-top: 15px !important;
+            }
+
+            #t4R,
+            #t5R {
+              padding-top: 25px !important;
+            }
+            #t3R {
+              padding-top: 40px !important;
+            }
+
+            #t1R,
+            #t2R,
+            #t3R,
+            #t4R,
+            #t5R {
+              max-width: 60% !important;
+              height: 500px;
+
+              padding-bottom: 10px !important;
+            }
+
+            .types_box_type_cnt_side {
+              width: 100%;
+              height: 100%;
+
+              .types_box_type_cnt_side_text {
+                max-width: 80%;
+                @include qC;
+
+                h2 {
+                  font-size: 41px;
+                }
+
+                p {
+                  font-size: 17px;
+                }
+
+                a {
+                  font-size: 16px;
+                }
+
+                h4 {
+                  font-size: 32px;
+                }
+
+                ul {
+                  li {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #atelerixBody,
+  #erinaceusBody,
+  #hemiechinusBody,
+  #mesechinusBody,
+  #paraechinusBody {
+    .type_species {
+      .type_togglers_box {
+        .type_togglers_row {
+          .type_toggler {
+            max-width: 50% !important;
+            height: 220px;
+
+            .modal_toggler_bg {
+              .modal_toggler {
+                background-color: rgba(0, 0, 0, 0.8);
+
+                div {
+                  padding: 5px !important;
+                  padding-left: 10px !important;
+                  h2 {
+                    font-size: 28px !important;
+                    margin-bottom: 0 !important;
+                  }
+
+                  p {
+                    font-size: 16px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .modal {
+      max-height: 85%;
+      max-width: 65%;
+    }
+  }
+}
+
+/*! iPad Pro */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #typesBody {
+    //? Types Box
+    .types_box {
+      padding-top: 60px !important;
+      padding-bottom: 10px !important;
+      max-width: 75%;
+      .types_box_type {
+        .types_box_type_cnt {
+          .types_box_type_cnt_row {
+            #t1R,
+            #t2R,
+            #t3R,
+            #t4R,
+            #t5R {
+              height: 500px;
+              padding-top: 60px !important;
+              padding-bottom: 60px !important;
+            }
+
+            .types_box_type_cnt_side {
+              width: 100%;
+              max-width: 100% !important;
+              height: 220px;
+
+              .types_box_type_cnt_side_text {
+                max-width: 85%;
+                @include qC;
+
+                h2 {
+                  font-size: 50px;
+                }
+
+                p {
+                  font-size: 18px;
+                }
+
+                a {
+                  font-size: 15px;
+                }
+
+                h4 {
+                  font-size: 35px;
+                }
+
+                ul {
+                  li {
+                    margin: 5px !important;
+                    font-size: 17px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #atelerixBody,
+  #erinaceusBody,
+  #hemiechinusBody,
+  #mesechinusBody,
+  #paraechinusBody {
+    .type_species {
+      .type_togglers_box {
+        .type_togglers_row {
+          .type_toggler {
+            max-width: 50% !important;
+            height: 260px;
+
+            .modal_toggler_bg {
+              .modal_toggler {
+                background-color: rgba(0, 0, 0, 0.8);
+
+                div {
+                  padding: 5px !important;
+                  padding-left: 10px !important;
+                  h2 {
+                    font-size: 34px !important;
+                    margin-bottom: 0 !important;
+                  }
+
+                  p {
+                    font-size: 18px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .modal {
+      max-height: 35%;
+      max-width: 65%;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  #typesBody {
+    //? Types Box
+    .types_box {
+      padding-top: 50px !important;
+      padding-bottom: 50px !important;
+      max-width: 95%;
+      .types_box_type {
+        .types_box_type_cnt {
+          .types_box_type_cnt_row {
+            #t1L,
+            #t2L,
+            #t3L,
+            #t4L,
+            #t5L {
+              max-width: 40% !important;
+              height: 500px;
+
+              .types_box_type_cnt_side_bg {
+                background-position: 70% 50%;
+              }
+            }
+            #t1R,
+            #t2R,
+            #t3R,
+            #t4R,
+            #t5R {
+              max-width: 60% !important;
+              height: 500px;
+              padding-top: 10px !important;
+              padding-bottom: 10px !important;
+            }
+
+            .types_box_type_cnt_side {
+              width: 100%;
+              height: 100%;
+
+              .types_box_type_cnt_side_text {
+                max-width: 80%;
+                @include qC;
+                margin-right: 0 !important;
+
+                h2 {
+                  font-size: 51px;
+                }
+
+                p {
+                  font-size: 18px;
+                }
+
+                a {
+                  font-size: 19px;
+                }
+
+                h4 {
+                  font-size: 35px;
+                }
+
+                ul {
+                  li {
+                    font-size: 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #atelerixBody,
+  #erinaceusBody,
+  #hemiechinusBody,
+  #mesechinusBody,
+  #paraechinusBody {
+    .type_species {
+      .type_togglers_box {
+        .type_togglers_row {
+          .type_toggler {
+            max-width: 50% !important;
+            height: 280px;
+
+            .modal_toggler_bg {
+              .modal_toggler {
+                background-color: rgba(0, 0, 0, 0.8);
+
+                div {
+                  padding: 5px !important;
+                  padding-left: 10px !important;
+                  h2 {
+                    font-size: 40px !important;
+                    margin-bottom: 0 !important;
+                  }
+
+                  p {
+                    font-size: 19px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .modal {
+      max-height: 55%;
+      max-width: 55%;
+    }
+  }
+}
+
+/*! Laptops */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+}
