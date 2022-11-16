@@ -1,0 +1,102 @@
+.override_homeBody .slick-slider .slick-current .override_iTopCnt {
+  visibility: visible !important;
+  opacity: 1 !important;
+  -webkit-transition: all 1.4s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: all 1.4s cubic-bezier(0.7, 0, 0.3, 1);
+  bottom: 0px !important;
+}
+
+.override_homeBody .slick-slider .slick-slide {
+  height: 1280px !important;
+}
+
+.override_homeBody .slick-slider .slick-dots {
+  bottom: 20px;
+  right: 0;
+  max-width: 300px;
+}
+
+.override_homeBody .slick-slider .slick-dots li {
+  margin: 10px !important;
+}
+
+.override_homeBody .slick-slider .slick-dots li button::before {
+  font-size: 26px;
+  color: white;
+}
+
+.override_homeBody .slick-slider .slick-dots .slick-active button::before {
+  color: #f3a032;
+}
+
+@media all and (max-width: 1995px) {
+  .override_homeBody .slick-slider .slick-slide {
+    height: 900px !important;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .override_homeBody .slick-slider .slick-slide {
+    height: 600px !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .override_homeBody .slick-slider .slick-slide {
+    height: 450px !important;
+  }
+  .override_homeBody .slick-slider .slick-dots {
+    max-width: 100%;
+  }
+}
+
+/*! Pixel 2 XL */
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .override_homeBody .slick-slider .slick-slide {
+    height: 320px !important;
+  }
+  .override_homeBody .slick-slider .slick-dots {
+    max-width: 100%;
+  }
+}
+
+/*! Ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .override_homeBody .slick-slider .slick-slide {
+    height: 550px !important;
+  }
+  .override_homeBody .slick-slider .slick-dots {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .override_homeBody .slick-slider .slick-slide {
+    height: 420px !important;
+  }
+  .override_homeBody .slick-slider .slick-dots {
+    max-width: 100%;
+  }
+}
+
+/*! iPad Pro */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .override_homeBody .slick-slider .slick-slide {
+    height: 620px !important;
+  }
+  .override_homeBody .slick-slider .slick-dots {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .override_homeBody .slick-slider .slick-slide {
+    height: 820px !important;
+  }
+  .override_homeBody .slick-slider .slick-dots {
+    max-width: 100%;
+  }
+}
+
+/*! Laptops */
+/*# sourceMappingURL=overrides.css.map */
