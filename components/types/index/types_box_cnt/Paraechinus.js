@@ -51,7 +51,7 @@ const Paraechinus = () => {
                 East and South Asia.
               </p>
 
-              <Link href="/next-projects/sharpquills/types/paraechinus/">
+              <Link href="/types/paraechinus">
                 <a className="page-transition">View Paraechinus</a>
               </Link>
 

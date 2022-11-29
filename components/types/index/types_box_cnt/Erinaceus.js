@@ -51,7 +51,7 @@ const Erinaceus = () => {
                 parts of Russia, and extending to northern China and Korea.
               </p>
 
-              <Link href="/next-projects/sharpquills/types/erinaceus/">
+              <Link href="/types/erinaceus">
                 <a className="page-transition">View Erinaceus</a>
               </Link>
 

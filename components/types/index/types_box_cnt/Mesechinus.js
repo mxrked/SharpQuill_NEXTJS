@@ -51,7 +51,7 @@ const Mesechinus = () => {
                 from East Asia.
               </p>
 
-              <Link href="/next-projects/sharpquills/types/mesechinus/">
+              <Link href="/types/mesechinus">
                 <a className="page-transition">View Mesechinus</a>
               </Link>
 

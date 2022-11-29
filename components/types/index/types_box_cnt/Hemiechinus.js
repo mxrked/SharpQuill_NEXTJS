@@ -51,7 +51,7 @@ const Hemiechinus = () => {
                 found in Central and South Asia.
               </p>
 
-              <Link href="/next-projects/sharpquills/types/hemiechinus/">
+              <Link href="/types/hemiechinus">
                 <a className="page-transition">View Hemiechinus</a>
               </Link>
 

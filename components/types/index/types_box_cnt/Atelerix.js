@@ -51,7 +51,7 @@ const Atelerix = () => {
                 contains four species, all native to Africa.
               </p>
 
-              <Link href="/next-projects/sharpquills/types/atelerix/">
+              <Link href="/types/atelerix">
                 <a className="page-transition">View Atelerix</a>
               </Link>
 
