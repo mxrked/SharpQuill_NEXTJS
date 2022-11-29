@@ -62,7 +62,7 @@ const Types = () => {
             aliquip ex ea commodo consequat.
           </p>
 
-          <Link href="/next-projects/sharpquills/types/">
+          <Link href="/types">
             <a className="page-transition">View All</a>
           </Link>
         </div>
